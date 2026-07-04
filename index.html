@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hieronymus Hoyles</title>
+  <meta name="description" content="Niche European menswear. Links & Kontakt." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #14110f;
+      --muted: #6b6560;
+      --line: #e7e3df;
+      --btn-hover: #14110f;
+      --btn-hover-fg: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 440px;
+      margin: 0 auto;
+      padding: 72px 24px 40px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    header { text-align: center; margin-bottom: 44px; }
+    .mark {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 20px;
+      border: 1px solid var(--fg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+      letter-spacing: 0.02em;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      font-size: 26px;
+      letter-spacing: -0.01em;
+      margin: 0 0 6px;
+    }
+    .tagline {
+      margin: 0;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--muted);
+    }
+    .links { display: flex; flex-direction: column; gap: 12px; }
+    a.link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--fg);
+      font-size: 15px;
+      letter-spacing: 0.01em;
+      transition: background .18s ease, color .18s ease, border-color .18s ease, transform .06s ease;
+    }
+    a.link:hover {
+      background: var(--btn-hover);
+      color: var(--btn-hover-fg);
+      border-color: var(--btn-hover);
+    }
+    a.link:active { transform: scale(0.99); }
+    a.link .ico { flex: 0 0 20px; display: flex; }
+    a.link .ico svg { width: 20px; height: 20px; }
+    a.link .label { flex: 1; }
+    a.link .chev { opacity: .35; font-size: 13px; }
+    footer {
+      text-align: center;
+      padding: 28px 24px 34px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); text-underline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="mark">HH</div>
+      <h1>Hieronymus Hoyles</h1>
+      <p class="tagline">Niche European Menswear</p>
+    </header>
+
+    <nav class="links">
+      <a class="link" href="https://www.instagram.com/h1eronymus" target="_blank" rel="noopener">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="label">Instagram</span>
+        <span class="chev">→</span>
+      </a>
+
+      <a class="link" href="https://www.tiktok.com/@h1eronymus" target="_blank" rel="noopener">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 4c.4 2.4 2.1 4.2 4.5 4.5"/></svg>
+        </span>
+        <span class="label">TikTok</span>
+        <span class="chev">→</span>
+      </a>
+
+      <a class="link" href="mailto:hieronymushoyles@gmail.com">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </span>
+        <span class="label">Kontakt &amp; Kooperationen</span>
+        <span class="chev">→</span>
+      </a>
+
+      <a class="link" href="https://hieronymushoyles-ui.github.io/impressum/" target="_blank" rel="noopener">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h9l3 3v15H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg>
+        </span>
+        <span class="label">Impressum</span>
+        <span class="chev">→</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    © <span id="year">2026</span> Hieronymus Hoyles ·
+    <a href="https://hieronymushoyles-ui.github.io/impressum/">Impressum</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
